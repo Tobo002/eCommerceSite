@@ -1,0 +1,63 @@
+.checkout-form__field input,
+.product-filters__field input,
+.survey-modal__comment textarea {
+  padding: var(--input-padding-y) var(--input-padding-x);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-sm);
+  color: var(--color-neutral-800);
+  background-color: var(--color-white);
+  border: 1px solid var(--input-border);
+  border-radius: var(--input-radius);
+}
+
+.checkout-form__field input {
+  font-size: var(--font-size-base);
+}
+
+.checkout-form__field input:focus,
+.product-filters__field input:focus,
+.survey-modal__comment textarea:focus {
+  outline: 2px solid var(--focus-ring-color);
+  outline-offset: 1px;
+}
+
+.survey-modal__comment textarea:focus {
+  --focus-ring-color: var(--color-dark-accent);
+}
+
+.checkout-form__field,
+.product-filters__field,
+.survey-modal__comment {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-neutral-700);
+}
+
+.product-filters__field {
+  gap: var(--space-xs);
+  margin-bottom: var(--space-sm);
+}
+
+.checkout-form__field {
+  gap: 0.375rem;
+}
+
+.survey-modal__comment {
+  gap: 0.375rem;
+}
+
+.survey-modal__comment textarea {
+  resize: vertical;
+}
+
+.product-filters__group legend,
+.survey-modal__group legend,
+.checkout-form .checkout-step fieldset legend {
+  margin-bottom: var(--space-sm);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-neutral-700);
+}

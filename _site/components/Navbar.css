@@ -1,0 +1,93 @@
+.navbar {
+  border-bottom: 1px solid var(--color-neutral-200);
+  background-color: var(--color-white);
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--section-spacing);
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--space-lg) var(--page-padding-x);
+}
+
+.navbar__logo {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar__logo:hover {
+  color: var(--color-primary-hover);
+  text-decoration: none;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xl);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex: 1;
+}
+
+.navbar__link {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-neutral-700);
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: color 0.15s ease;
+}
+
+.navbar__link:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.navbar__cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm);
+  color: var(--color-neutral-700);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.navbar__cart:hover {
+  color: var(--color-primary);
+  background-color: var(--color-neutral-50);
+  text-decoration: none;
+}
+
+.navbar__cart-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.navbar__cart-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.125rem;
+  height: 1.125rem;
+  padding: 0 var(--space-xs);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-white);
+  border-radius: 999px;
+  transform: translate(25%, -25%);
+}

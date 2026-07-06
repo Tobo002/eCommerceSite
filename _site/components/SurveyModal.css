@@ -1,0 +1,115 @@
+.survey-modal__backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--page-padding-x);
+  background-color: rgba(26, 26, 26, 0.4);
+}
+
+.survey-modal {
+  width: 100%;
+  max-width: 440px;
+  padding: var(--space-3xl);
+  background-color: var(--color-white);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-md);
+}
+
+.survey-modal__header {
+  margin-bottom: var(--space-2xl);
+}
+
+.survey-modal__header h2 {
+  margin: 0 0 0.375rem;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-neutral-900);
+}
+
+.survey-modal__header p {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-dark-accent);
+}
+
+.survey-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--grid-gap);
+}
+
+.survey-modal__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.survey-modal__rating {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.survey-modal__rating-option {
+  cursor: pointer;
+}
+
+.survey-modal__rating-option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.survey-modal__rating-option span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-dark-accent);
+  background-color: var(--color-neutral-50);
+  border: 1px solid var(--input-border);
+  border-radius: var(--radius-sm);
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.survey-modal__rating-option input:checked + span {
+  color: var(--color-white);
+  background-color: var(--color-dark-accent);
+  border-color: var(--color-dark-accent);
+}
+
+.survey-modal__rating-option:hover span {
+  border-color: var(--color-dark-accent);
+}
+
+.survey-modal__choices {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.survey-modal__choice {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-dark-accent);
+  cursor: pointer;
+}
+
+.survey-modal__optional {
+  font-weight: var(--font-weight-normal);
+  color: var(--color-dark-accent);
+}
+
+.survey-modal__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  padding-top: var(--space-xs);
+}
